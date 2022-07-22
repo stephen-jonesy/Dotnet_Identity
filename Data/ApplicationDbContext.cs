@@ -11,4 +11,5 @@ public class ApplicationDbContext : IdentityDbContext
     {
     }
     public DbSet<ContactManager.Models.Contact>? Contact { get; set; }
+
 }

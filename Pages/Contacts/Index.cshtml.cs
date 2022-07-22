@@ -28,14 +28,16 @@ namespace ContactManager.Pages.Contacts
 
         public async Task OnGetAsync()
         {
+
             var contacts = from c in Context.Contact
                         select c;
 
+
             var isAuthorized = User.IsInRole(Constants.ContactManagersRole) ||
                             User.IsInRole(Constants.ContactAdministratorsRole);
-
+            
             var currentUserId = UserManager.GetUserId(User);
-
+            Console.WriteLine(currentUserId);
             // Only approved contacts are shown UNLESS you're authorized to see them
             // or you are the owner.
             if (!isAuthorized)
@@ -43,8 +45,8 @@ namespace ContactManager.Pages.Contacts
                 contacts = contacts.Where(c => c.Status == ContactStatus.Approved
                                             || c.OwnerID == currentUserId);
             }
-
             Contact = await contacts.ToListAsync();
+
         }
     }
 }

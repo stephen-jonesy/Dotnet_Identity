@@ -3,6 +3,8 @@
 
 @{
     ViewData["Title"] = "Index";
+    Console.WriteLine(Model.Contact);
+
 }
 
 <h1>Index</h1>
@@ -39,6 +41,8 @@
     </thead>
     <tbody>
 @foreach (var item in Model.Contact) {
+        Console.WriteLine(item.Name);
+
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
