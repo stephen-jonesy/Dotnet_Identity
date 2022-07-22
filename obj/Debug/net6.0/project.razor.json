@@ -16333,6 +16333,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/stephen/Documents/code/ContactManager/Pages/Users.cshtml",
+      "TargetPath": "Pages\\Users.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/stephen/Documents/code/ContactManager/Pages/Contacts/Index.cshtml",
       "TargetPath": "Pages\\Contacts\\Index.cshtml",
       "FileKind": "mvc"
