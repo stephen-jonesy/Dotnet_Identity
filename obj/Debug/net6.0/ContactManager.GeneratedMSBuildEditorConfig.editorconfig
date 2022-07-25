@@ -59,8 +59,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/stephen/Documents/code/ContactManager/Pages/Users.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlcnMuY3NodG1s
+[/Users/stephen/Documents/code/ContactManager/Pages/Users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlcnMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/stephen/Documents/code/ContactManager/Pages/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlcnMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/stephen/Documents/code/ContactManager/Pages/_ViewImports.cshtml]

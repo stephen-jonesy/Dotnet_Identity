@@ -44,6 +44,7 @@ namespace ContactManager.Pages.Contacts
 
             Context.Contact.Add(Contact);
             await Context.SaveChangesAsync();
+            Console.WriteLine("form submited");
 
             return RedirectToPage("./Index");
         }

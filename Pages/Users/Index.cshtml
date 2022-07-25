@@ -1,0 +1,52 @@
+@page
+@model ContactManager.Pages.Users.IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div>
+
+    <table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => Model.userList[0].UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => Model.userList[0].Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => Model.userList[0].Roles)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.userList) {
+            <tr>
+                <td>
+                    @item.UserName
+                </td>
+                <td>
+                    @item.Email
+                </td>
+                <td>
+                    @if(item.Roles.Count() > 0){
+                        @foreach (var role in item.Roles)
+                        {                        
+                            @role
+
+                        }
+                    } else {
+                        <div>n/a</div>
+                    }
+                </td>
+                <td>
+                    <a asp-page="./Details" asp-route-id="@item.Id">Details</a>
+
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

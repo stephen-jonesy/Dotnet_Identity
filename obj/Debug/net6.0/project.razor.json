@@ -16298,8 +16298,18 @@
   "RootNamespace": "ContactManager",
   "Documents": [
     {
+      "FilePath": "/Users/stephen/Documents/code/ContactManager/Pages/Users/Index.cshtml",
+      "TargetPath": "Pages\\Users\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/stephen/Documents/code/ContactManager/Pages/Contacts/Create.cshtml",
       "TargetPath": "Pages\\Contacts\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/stephen/Documents/code/ContactManager/Pages/Users/Details.cshtml",
+      "TargetPath": "Pages\\Users\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16330,11 +16340,6 @@
     {
       "FilePath": "/Users/stephen/Documents/code/ContactManager/Pages/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/stephen/Documents/code/ContactManager/Pages/Users.cshtml",
-      "TargetPath": "Pages\\Users.cshtml",
       "FileKind": "mvc"
     },
     {

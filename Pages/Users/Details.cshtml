@@ -1,0 +1,42 @@
+@page
+@model ContactManager.Pages.Users.DetailsModel
+@{
+    ViewData["Title"] = "User Details";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <h4>User</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.userName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.userName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.roles)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.roles)
+        </dd>
+        <dd class="col-sm-10">
+
+    <form method="post">
+        <table>
+            <tr>
+                <td>First Name: </td>
+                <td><input type="text" id="txtFirstName" name="Name"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Submit" asp-page-handler="Submit"/></td>
+            </tr>
+        </table>
+        <hr/>
+    </form>
+        </dd>
+    </dl>
+</div>
