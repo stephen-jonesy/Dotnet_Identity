@@ -2,6 +2,8 @@
 @model ContactManager.Pages.Users.DetailsModel
 @{
     ViewData["Title"] = "User Details";
+    var AllRoles = (List<IdentityRole>)ViewData["roles"]; 
+
 }
 
 <h1>@ViewData["Title"]</h1>
@@ -26,17 +28,35 @@
 
     <form method="post">
         <table>
-            <tr>
-                <td>First Name: </td>
-                <td><input type="text" id="txtFirstName" name="Name"/></td>
-            </tr>
+
             <tr>
                 <td></td>
-                <td><input type="submit" value="Submit" asp-page-handler="Submit"/></td>
+                <input type="hidden" name="Id" value="@Html.DisplayFor(model => model.Id)"> 
+                <select name="NewRoleType">
+                    <option value="">Select a role</option>
+                    <option value="ContactManagers">ContactManagers</option>
+                    <option value="ContactAdministrators">ContactAdministrators</option>
+                </select>
+                <td><input type="submit" value="Add to role" asp-page-handler="AddRole" class="btn btn-primary"/></td>
             </tr>
         </table>
         <hr/>
     </form>
+        <form method="post">
+        <table>
+
+            <tr>
+                <td></td>
+                <input type="hidden" name="Id" value="@Html.DisplayFor(model => model.Id)"> 
+                <td><input type="submit" value="Remove from role" asp-page-handler="RemoveRole" class="btn btn-danger"/></td>
+            </tr>
+        </table>
+        <hr/>
+    </form>
+
+        @foreach (var item in AllRoles) {
+            <div>@item</div>
+        }
         </dd>
     </dl>
 </div>
